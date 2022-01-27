@@ -1,0 +1,51 @@
+/* External Styles */
+
+/* Element Selector */
+body{
+  font-family: Calibri, Arial;
+  margin: 0;
+}
+
+/* Class Selector */
+.appLogoBox{
+  width: 100px;
+}
+
+.primaryNav ul li{
+  display: inline;
+  padding: 0 15px;
+  list-style: none;
+}
+
+/* Attribute Selector */
+[type='button']{
+  background-color: deepskyblue;
+  border: deepskyblue;
+  font-size: 24px;
+  padding: 10px 26px;
+}
+
+a{
+  color: rgb(0 42 106);
+  background-color: #eeeeee;
+  text-decoration: none;
+}
+
+/* Pseudo Selector */
+a:hover{
+  color: red;
+  background-color: yellow;
+  text-decoration: underline;
+}
+
+.primaryNav ul li:nth-child(5){
+  border: solid 5px red;
+}
+
+/* for About page */
+.aboutUsText{
+  text-shadow: 3px 3px 1px red;
+}
+
+
+
