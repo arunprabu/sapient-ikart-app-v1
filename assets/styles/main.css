@@ -1,8 +1,15 @@
 /* External Styles */
+/* app wide css */
+
+/* Embedding Font using CSS3 @font-face rule */
+@font-face {
+  font-family: "Montserrat";
+  src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
 
 /* Element Selector */
 body{
-  font-family: Calibri, Arial;
+  font-family: Montserrat;
   margin: 0;
 }
 
@@ -22,7 +29,7 @@ body{
   background-color: deepskyblue;
   border: deepskyblue;
   font-size: 24px;
-  padding: 10px 26px;
+  padding: 10px 26px; /* top right bottom left  */
 }
 
 a{
@@ -38,14 +45,27 @@ a:hover{
   text-decoration: underline;
 }
 
+a:visited{
+  color: white;
+  background-color: purple;
+  text-decoration: underline;
+}
+
 .primaryNav ul li:nth-child(5){
   border: solid 5px red;
 }
 
-/* for About page */
-.aboutUsText{
-  text-shadow: 3px 3px 1px red;
+article:target {
+  background-color: gold;
 }
 
+/* for About page */
+.aboutUsText{
+  text-shadow: 3px 3px 1px red; /*offset-x offset-y blur-radius color */
+}
 
-
+#testimonials{
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  padding: 50px 0;
+}
