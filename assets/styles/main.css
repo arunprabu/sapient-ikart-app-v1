@@ -155,26 +155,11 @@ video{
 /* about us page related styles */
 
 
-
 /* responsive styles */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-  .primaryNav{
-    display: none;
-  }
-
-  .menuCollapsed{
-    display:block;
-  }
-
-  #featureWrapper{
-    display: block;
-  }
-
-  #featureWrapper .featureBox{
-    display: block;
-  }
+  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
