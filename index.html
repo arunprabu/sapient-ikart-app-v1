@@ -4,10 +4,16 @@
     <title>iKart - The Best Online Shopping App!</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Initial Zoom level 
+      and width=device-width part sets the width of the page to follow the screen-width of the device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Home Page of iKart - We ....">
     <meta name="keywords" content="online shopping, ikart shopping, ikart,
      ecommerce, e-com, quick commerce, the best shopping site india">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet"> -->
 
     <!-- Linking External Styles -->
     <link rel="stylesheet" href="./assets/styles/main.css">
@@ -46,6 +52,7 @@
         </a>
       </div>
 
+      <img src="assets/icons/hamburger.png" class="menuCollapsed" width="32" height="32" alt="Menu Collapsed">
       <nav class="primaryNav">
         <ul>
           <li><a href="./index.html">Home</a></li>
@@ -56,33 +63,33 @@
         </ul>
       </nav>
 
-      <hr>
     </header>
-
+    
     <main>
       <section id="jumbotron">
-        <!-- Inline Styles -->
-        <h1 style="color: red; background-color: yellow;">Same Day Delivery!</h1>
+        
+        <h1>Same Day Delivery!</h1>
         <p id="appDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa maxime, aliquid repellat, fugiat consectetur nemo sunt quibusdam ipsam, laudantium voluptatem minus. Eaque laboriosam recusandae beatae minus consequuntur molestias est corporis.</p>
+        <!-- Inline Styles -->
         <button type="button" style="font-size: 20px;">Browse 1000+ Products</button>
       </section>
 
-      <section id="feature">
-        <div id="cities">
+      <section id="featureWrapper">
+        <div id="cities" class="featureBox">
           <img src="./assets/images/city.png" alt="Serving 200 Cities">
           <h2>Serving 200 Cities!!!!</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
           <a href="#">View Details..</a>
         </div>
 
-        <div id="cod">
+        <div id="cod" class="featureBox">
           <img src="./assets/images/cod.png" alt="Cash on Delivery">
           <h2>Accepting COD</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
           <a href="#">View Details...</a>
         </div>  
         
-        <div id="selling">
+        <div id="selling" class="featureBox">
           <img src="./assets/images/sales.png" alt="Selling 1000+ products / sec">
           <h2>Selling 1000+ products / sec</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
@@ -93,7 +100,7 @@
 
     <footer>
       <hr>
-      <p>&copy; 2022 Copyright  | Arun</p>
+      <p>&copy; 2022 Copyright | Arun</p>
     </footer>
 
   </body>

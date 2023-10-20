@@ -1,0 +1,53 @@
+How to Upload Daily Hands-on projects into bitbucket?
+---
+
+After the hands-on project checked out 
+
+finally, try the following 
+  git checkout -b trainer-arun/day6 (use your name instead)
+
+To verify what's the branch selected
+  git branch 
+
+create the daywise branch. example day6
+after that, add the necessary codebase inside 
+
+Then, 
+  git status       (this will show all the new/changed files)
+  git add .
+  git commit -m "updated for the day" 
+  git push origin trainer-arun/day6    (here trainer-arun/day7 is the branch name)
+
+  or else 
+  git push -u origin trainer-arun/day6
+
+Like this create a new daywise folder next day. and push that code also. 
+Maintain all daywise projects inside one branch itself against your name. 
+==============
+
+
+Creating Branches for iterative projects
+----
+after checking out iterative projects git repo...
+    git status 
+    git branch    (check whether it is master branch or not -- if not master branch switch to it)
+    git checkout -b feature/static-app-home
+
+add the necessary project files 
+    git add . 
+    git commit -m 'pod 1 feature updates' 
+    git push origin feature/static-app-home
+  or else 
+    git push -u origin feature/static-app-home
+
+
+
+
+  
+
+
+
+
+
+
+

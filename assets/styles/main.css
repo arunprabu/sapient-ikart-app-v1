@@ -1,14 +1,48 @@
 /* External Styles */
+/* app wide css */
+
+/* Embedding Font using CSS3 @font-face rule */
+@font-face {
+  font-family: "Montserrat";
+  src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
 
 /* Element Selector */
 body{
-  font-family: Calibri, Arial;
+  font-family: Montserrat;
   margin: 0;
+}
+
+
+/* util classes */
+.ml5{
+  margin-left: 5px !important;
+}
+
+.textCenter{
+  text-align: center !important;
+}
+
+/* header styles */
+header {
+  height: 90px;
+  display:flex;
 }
 
 /* Class Selector */
 .appLogoBox{
-  width: 100px;
+  width: 100px; 
+  margin: 10px 15px;
+}
+
+.primaryNav{
+  width: calc(100% - 130px);
+  padding-top:20px;
+  text-align: right;
+}
+
+.menuCollapsed{
+  display:none;
 }
 
 .primaryNav ul li{
@@ -22,30 +56,144 @@ body{
   background-color: deepskyblue;
   border: deepskyblue;
   font-size: 24px;
-  padding: 10px 26px;
+  padding: 10px 26px; /* top right bottom left  */
 }
 
-a{
-  color: rgb(0 42 106);
-  background-color: #eeeeee;
+
+main{
+  border-top: 1px solid #ddd;
+}
+
+a{ 
   text-decoration: none;
 }
 
 /* Pseudo Selector */
 a:hover{
-  color: red;
-  background-color: yellow;
+  color: darkblue;
+  text-decoration: underline;
+}
+
+a:visited{
   text-decoration: underline;
 }
 
 .primaryNav ul li:nth-child(5){
   border: solid 5px red;
+  background: lightpink;
+}
+
+article:target {
+  background-color: gold;
 }
 
 /* for About page */
 .aboutUsText{
-  text-shadow: 3px 3px 1px red;
+  text-shadow: 3px 3px 1px red; /*offset-x offset-y blur-radius color */
+}
+
+#testimonials{
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 40px;
+}
+
+footer{
+  background: rgb(238,174,202); 
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  height: 120px;
+}
+
+/* home page styles */
+#jumbotron{
+  /* background: blue no-repeat url("../images/blurred-bg.jpeg"); */
+  background-color: blue;
+  background-image: url("../images/blurred-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  background-origin: border-box; TODO:  */
+  height: 300px;
+  text-align: center;
+  padding: 160px 0;
+}
+
+video{
+  box-shadow: 5px 5px 10px 4px #0044FF;
+  display: block;
+  margin: 0 auto;
 }
 
 
+#featureWrapper{
+  display: flex;
+}
 
+#featureWrapper .featureBox{
+  background: #efefef;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+#featureWrapper img{
+  border: 2px solid #9a9a9a;
+  border-radius: 50%;
+  width: 100px;
+}
+
+/*contact page related styles */
+.redText{
+  color: red !important;
+}
+
+.footerText{
+  color: brown;
+}
+
+/* about us page related styles */
+
+
+/* responsive styles */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .primaryNav{
+    display: none;
+  }
+
+  .menuCollapsed{
+    display:block;
+  }
+
+  #featureWrapper{
+    display: block;
+  }
+
+  #featureWrapper .featureBox{
+    display: block;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) { 
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up)  - TV */
+@media only screen and (min-width: 1200px) {
+  
+}
